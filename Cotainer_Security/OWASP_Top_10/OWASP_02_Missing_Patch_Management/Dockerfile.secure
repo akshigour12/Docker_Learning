@@ -1,0 +1,6 @@
+# Secure Docker Image
+# Uses the latest supported slim Python image
+
+FROM python:3.12-slim
+
+CMD ["python", "--version"]
