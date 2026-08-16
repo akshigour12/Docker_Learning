@@ -233,42 +233,17 @@ ping database
 ---
 
 # Screenshots
+![Insecure Network](owasp-03.png)
 
-## Insecure Network
 
-![Insecure Network](Screenshots/insecure-network.png)
 
----
+![Frontend Network](owasp-03-01.png)
 
-## Secure Frontend Network
 
-![Frontend Network](Screenshots/frontend-network.png)
 
----
+![Backend Network](owasp_docker-2.png)
 
-## Secure Backend Network
 
-![Backend Network](Screenshots/backend-network.png)
-
----
-
-## Web → API
-
-![Web API](Screenshots/ping-api-success.png)
-
----
-
-## Web → Database
-
-![Web Database](Screenshots/ping-database-failed.png)
-
----
-
-## API → Database
-
-![API Database](Screenshots/ping-database-success.png)
-
----
 
 # Conclusion
 
