@@ -112,35 +112,8 @@ The secure image should report:
 
 # Screenshots
 
-## Vulnerable Image
 
-Add:
 
-```
-screenshots/quickview-v1.png
-```
-
----
-
-## Secure Image
-
-Add:
-
-```
-screenshots/quickview-v2.png
-```
-
----
-
-## CVE Report
-
-Add:
-
-```
-screenshots/cves.png
-```
-
----
 
 # Mitigation
 
