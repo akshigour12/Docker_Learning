@@ -233,15 +233,15 @@ ping database
 ---
 
 # Screenshots
-![Insecure Network](owasp-03.png)
+![Main Menu](owasp-03.png)
 
 
 
-![Frontend Network](owasp-03-01.png)
+![Main Menu](owasp-03-01.png)
 
 
 
-![Backend Network](owasp_docker-2.png)
+![Main Menu](owasp_docker-2.png)
 
 
 
