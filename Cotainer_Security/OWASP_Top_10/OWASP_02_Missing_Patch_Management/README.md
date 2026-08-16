@@ -112,7 +112,7 @@ The secure image should report:
 
 # Screenshots
 
-
+![Main Menu](Screenshots/owasp_docker-2.png)
 
 
 # Mitigation
