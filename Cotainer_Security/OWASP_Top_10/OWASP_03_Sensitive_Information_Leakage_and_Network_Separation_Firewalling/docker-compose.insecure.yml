@@ -1,0 +1,19 @@
+version: "3.9"
+
+services:
+  web:
+    image: nginx
+    container_name: web
+
+  api:
+    image: nginx
+    container_name: api
+
+  database:
+    image: mysql:8
+    container_name: database
+    environment:
+      MYSQL_ROOT_PASSWORD: root123
+
+networks:
+  default:

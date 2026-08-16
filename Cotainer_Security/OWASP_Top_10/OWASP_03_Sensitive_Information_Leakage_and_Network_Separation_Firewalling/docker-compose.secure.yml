@@ -1,0 +1,25 @@
+services:
+  web:
+    image: nginx
+    container_name: web
+    networks:
+      - frontend
+
+  api:
+    image: nginx
+    container_name: api
+    networks:
+      - frontend
+      - backend
+
+  database:
+    image: mysql:8
+    container_name: database
+    environment:
+      MYSQL_ROOT_PASSWORD: root123
+    networks:
+      - backend
+
+networks:
+  frontend:
+  backend:
