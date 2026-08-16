@@ -1,16 +1,46 @@
-docker-learning
+# Docker Learning
 
-A personal repo for learning Docker — concepts, hands-on exercises, and small projects. Each subfolder is a self-contained module covering a different angle of Docker.
+A personal repository for learning Docker through hands-on practice, small projects, and real-world examples. Each subfolder focuses on a specific Docker concept or tool, making it easy to learn one topic at a time.
 
-Modules
-Folder	Topic
-python-docker-sdk/	Controlling Docker programmatically from Python using the docker SDK
+## Repository Structure
 
-More modules will be added as I learn: Dockerfiles, multi-stage builds, docker-compose, networking, volumes, etc.
+| Module | Description |
+|--------|-------------|
+| `Docker-SDK-Python/` | Learn how to control and automate Docker programmatically using the Python Docker SDK. |
 
-Prerequisites
-Docker installed and running (Docker Desktop or Docker Engine on Linux)
-Python 3.8+
-Goal
+> More modules will be added as I continue learning Docker, including:
+>
+> - Dockerfiles
+> - Multi-stage builds
+> - Docker Compose
+> - Docker Networking
+> - Docker Volumes
+> - Docker Images
+> - Container Security
+> - Docker Best Practices
 
-Move from "I can run docker commands" to "I understand what's happening under the hood and can automate it."
+## Prerequisites
+
+Before running the projects in this repository, ensure you have:
+
+- Docker Desktop or Docker Engine installed
+- Docker daemon running
+- Python 3.8 or later (for Python-based projects)
+
+## Learning Goals
+
+This repository is intended to document my Docker learning journey. The goal is to move beyond simply running Docker commands and develop a deeper understanding of how Docker works internally and how it can be automated using tools like the Python Docker SDK.
+
+By the end of this repository, I aim to be comfortable with:
+
+- Building and managing Docker images
+- Creating and managing containers
+- Writing Dockerfiles
+- Using Docker Compose
+- Working with networks and volumes
+- Automating Docker using Python
+- Applying Docker best practices in real-world projects
+
+## Contributing
+
+This repository is primarily for personal learning, but suggestions, improvements, and feedback are always welcome.
