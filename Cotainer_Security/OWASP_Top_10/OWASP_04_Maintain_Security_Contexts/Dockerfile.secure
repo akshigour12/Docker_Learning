@@ -1,0 +1,14 @@
+FROM ubuntu:24.04
+
+RUN apt-get update && \
+    apt-get install -y \
+        libcap2-bin \
+        iputils-ping && \
+    rm -rf /var/lib/apt/lists/*
+
+RUN groupadd -r appgroup && \
+    useradd -r -g appgroup appuser
+
+USER appuser
+
+CMD ["sleep", "infinity"]
