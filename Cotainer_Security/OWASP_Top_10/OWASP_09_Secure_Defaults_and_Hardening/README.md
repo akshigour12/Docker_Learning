@@ -142,13 +142,61 @@ Docker Scout highlights vulnerabilities and recommends more secure base images, 
 
 # Screenshots
 
-- Docker Scout (Vulnerable)
-- Docker Scout (Secure)
-- Docker Socket Mounted
-- Docker Socket Not Mounted
-- Root User (`whoami`)
-- Non-root User (`whoami`)
-- `docker ps` inside vulnerable container
+# Screenshots
+
+## 1. Docker Scout - Vulnerable Image
+
+Shows vulnerabilities present in the vulnerable image.
+
+![Docker Scout Vulnerable](Screenshots/owasp09-v1.png)
+
+---
+
+## 2. Docker Scout - Secure Image
+
+Shows the improved security posture after hardening the image.
+
+![Docker Scout Secure](Screenshots/owasp09-v2.png)
+
+---
+
+## 3. Docker Socket Mounted (Vulnerable)
+
+The vulnerable container has access to the host Docker socket, allowing it to communicate with the Docker daemon.
+
+![Docker Socket Mounted](Screenshots/socket mount.png)
+
+---
+
+## 4. Host Containers Visible
+
+The vulnerable container can list all containers running on the Docker host using the mounted Docker socket.
+
+![Host Containers](Screenshots/host container.png)
+
+---
+
+## 5. Root User (Vulnerable)
+
+The vulnerable container runs as the **root** user.
+
+![Root User](Screenshots/root-vulnerable%20.png)
+
+---
+
+## 6. Non-root User (Secure)
+
+The secure container runs as the **appuser** instead of the root user.
+
+![Secure User](Screenshots/hardening-secure%20user.png)
+
+---
+
+## 7. Docker Socket Not Mounted (Secure)
+
+The secure container does not expose the Docker socket, preventing communication with the host Docker daemon.
+
+![Socket Not Mounted](Screenshots/secure-socket-notmount.png)
 
 ---
 
