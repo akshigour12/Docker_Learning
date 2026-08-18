@@ -114,11 +114,64 @@ Docker Scout helps to:
 
 # Screenshots
 
-- Docker Scout Quickview (v1)
-- Docker Scout Quickview (v2)
-- CVE Analysis
-- Recommendations
-- Image Comparison
+## 1. Docker Scout Quick View – Vulnerable Image
+
+The vulnerable image uses an outdated base image (`python:3.7`). Docker Scout identifies multiple known vulnerabilities and assigns a lower health score.
+
+```bash
+docker scout quickview owasp07:v1
+```
+
+![Quick View - Vulnerable](Screenshots/quickview-vulnerable.png)
+
+---
+
+## 2. Docker Scout Quick View – Secure Image
+
+The secure image uses a newer and supported base image (`python:3.12-slim`), resulting in significantly fewer vulnerabilities and an improved health score.
+
+```bash
+docker scout quickview owasp07:v2
+```
+
+![Quick View - Secure](Screenshots/quickview-secure.png)
+
+---
+
+## 3. CVE Analysis – Vulnerable Image
+
+Docker Scout lists all known Common Vulnerabilities and Exposures (CVEs) present in the vulnerable image, helping identify security risks associated with outdated packages.
+
+```bash
+docker scout cves owasp07:v1
+```
+
+![CVE Analysis - Vulnerable](Screenshots/cves-vulnerable.png)
+
+---
+
+## 4. CVE Analysis – Secure Image
+
+After updating the base image, Docker Scout reports a significant reduction in the number of known vulnerabilities, demonstrating the importance of keeping base images up to date.
+
+```bash
+docker scout cves owasp07:v2
+```
+
+![CVE Analysis - Secure](Screenshots/cves-secure.png)
+
+---
+
+## 5. Docker Scout Recommendations
+
+Docker Scout analyzes the image and recommends updating the base image to a newer supported version. Updating the base image reduces hundreds of known vulnerabilities and improves the overall security posture.
+
+```bash
+docker scout recommendations owasp07:v1
+```
+
+![Docker Scout Recommendations](Screenshots/recommendations.png)
+
 
 ---
 
