@@ -81,6 +81,11 @@ docker logs -t logging-demo
 ---
 
 # Screenshots
+![Docker Logs](Screenshots/docker-logs.png)
+
+![Live Logs](Screenshots/live-logs.png)
+
+![Logs with Timestamps](Screenshots/logs-with-timestamps.png)
 
 ## Docker Logs
 
