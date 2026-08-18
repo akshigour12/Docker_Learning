@@ -110,12 +110,35 @@ docker inspect owasp05:v1
 ---
 
 # Screenshots
+## 1. Hardcoded Secrets in the Vulnerable Image
 
-- Vulnerable container
-- `printenv` output
-- Docker inspect
-- Secure runtime execution
+The vulnerable Docker image contains database credentials that are embedded using Dockerfile environment variables.
 
+![Hardcoded Secrets](Screenshots/DB_username_password.png)
+
+---
+
+## 2. Exposed Secrets Using `printenv`
+
+An attacker with access to the running container can list environment variables and view sensitive information such as database credentials.
+
+```bash
+printenv
+```
+
+![Print Environment Variables](Screenshots/printenv.png)
+
+---
+
+## 3. Secure Image Verification
+
+The secure Docker image does not contain hardcoded credentials. Secrets are provided at runtime, making the image reusable without exposing sensitive information.
+
+```bash
+docker inspect owasp05:v2
+```
+
+![Secure Image Inspection](Screenshots/docker-inspect-secure.png)
 ---
 
 # Best Practices
