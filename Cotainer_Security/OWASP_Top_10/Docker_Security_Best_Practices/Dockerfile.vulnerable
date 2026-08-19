@@ -1,0 +1,24 @@
+# Old base image (not recommended)
+FROM python:3.10
+
+# Set working directory
+WORKDIR /app
+
+# Copy dependency file
+COPY requirements.txt .
+
+# Install dependencies
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy application
+COPY app.py .
+
+# Hardcoded secrets (Bad Practice)
+ENV DB_USERNAME=admin
+ENV DB_PASSWORD=Admin@123
+
+# Expose application port
+EXPOSE 5000
+
+# Run as root (default user)
+CMD ["python", "app.py"]
